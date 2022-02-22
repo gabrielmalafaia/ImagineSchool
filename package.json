@@ -1,0 +1,31 @@
+{
+  "name": "imagine-school",
+  "version": "0.0.1",
+  "description": "\u001b[CHomepage for Studion Envents provider and services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx live-server index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielWooten/ImagineSchool.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Gabriel Matheus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielWooten/ImagineSchool/issues"
+  },
+  "homepage": "https://github.com/GabrielWooten/ImagineSchool#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "resolve-url": "^0.2.1",
+    "source-map-url": "^0.4.1",
+    "urix": "^0.1.0"
+  }
+}
