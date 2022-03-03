@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&family=Roboto&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 * {
     box-sizing: border-box;
 }
@@ -233,10 +234,159 @@ ul {
 }
 
 .quote {
+
+    /*efect paralax*/
     background-image: url(./img/Layer\ 3.jpg);
-    min-height: 80vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+    font-size: .9375rem;
+    font-weight: 400;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    line-height: 1.4375rem;
+    max-width: 52ch; /**/
+    margin: 0;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -.1875rem;
+    line-height: 5rem;
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+    display: block;
+    
+}
+
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
+    background: unset;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+    justify-self: start;
+    margin: 0;
+}
+
+.logo-studion__subtitle {
+    margin-top: 2ch;
+    display: block;
+}
+
+.footer__form {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 9ch auto;
+    gap: 1.25rem;
+}
+
+.footer__form fieldset {
+    display: grid;
+    grid-template-columns: auto 3.375rem;
+    border: unset;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer__form label {
+    font-size: .875rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer__form input {
+    background-color: var(--color-primary);
+    border: unset;
+    height: 46px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.footer__form input::placeholder {
+    color: #000;
+}
+
+.footer__form input:focus {
+    outline: unset;
+}
+
+.footer__form button {
+    cursor: pointer;
+    border: unset;
+    height: 100%;
+    transition: .3s all ease;
+}
+
+.footer__form button:hover {
+    color: #fff;
+    background-color: var(--color-copy)
+
+}
+
+.footer__social {
+    justify-self: end;
+    
+}
+
+.footer__social a,
+.footer__social a:active,
+.footer__social a:visited {
+    color: #fff;
+    margin-left: .2rem;
+}
+
+.footer__social a .fa-twitter, 
+.footer__social a:active .fa-twitter,
+.footer__social a:visited .fa-twitter {
+    color: #000;
+}
+
+.footer hr {
+    border-color: #fff4;
+    margin: 0;
+}
+
+.footer p {
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 2.5rem 0;
 }
