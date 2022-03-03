@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,11 +9,24 @@
     font-size: 16px;
     --color-primary: #ffc500;
     --default-padding: 1rem;
+    --color-copy: #333;
+    color: var(--color-copy);
 }
 
 body {
     margin: 0;
     padding-top: 6.25rem;
+}
+
+header,
+main,
+footer {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 ul {
@@ -23,18 +36,22 @@ ul {
 }
 
 .navbar {
+    position: fixed;
+    z-index: 1; /*use só quando outros elementos sobressaem sobre a navbar*/        
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.container__navbar {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    position: fixed;
-    z-index: 1; /*use só quando outros elementos sobressaem sobre a navbar*/
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 6.25rem;
     padding: 0 1rem;
-    background-color: #000;
-    color: #fff;
 }
 
 .navbar__links {
@@ -44,6 +61,7 @@ ul {
 .navbar__links a {
     color: #fff;
     text-decoration: none;
+    transition: .2s all ease;
 }
 
 .navbar__links li {
@@ -89,7 +107,7 @@ ul {
 
 .slide {
     position: relative;
-    height: calc(100vh - 6.25rem);
+    height: calc(90vh - 6.25rem);
 }
 
 .slide__background-image {
@@ -137,10 +155,79 @@ ul {
 }
 
 .btn:hover, 
-btn:active, 
-btn:focus {
+.btn:active,
+.btn:focus,
+.btn--institutional {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
     color: #fff;
 
+}
+
+#counter {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.counter__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+    padding: 4.375rem 1rem;
+}
+
+.counter__container h3 {
+    font-size: 2.1875rem;
+
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem;
+    align-items: center;
+    padding: 4.375rem 1rem;
+}
+
+
+.institutional__copy{
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+}
+
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.institutional__copy p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.institutional__image {
+    max-width: 550px;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+    box-shadow: 0 .5rem .5rem #0006;
 }

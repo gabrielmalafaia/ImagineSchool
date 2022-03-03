@@ -11,37 +11,39 @@
 
 <body>
     <nav class="navbar">
-        <h1 class="logo-studion">
-            Studi<span class="copy--primary">ON</span><span class="logo-studion__subtitle"> Eventos</span>
-        </h1>
-        <ul class="navbar__links">
-            <li>
-                <a href="#company">
-                    Empresa
-                </a>
-            </li>
-            <li>
-                <a href="#events">
-                    Eventos
-                </a>
-            </li>
-            <li>
-                <a href="#galery">
-                    Galeria
-                </a>
-            </li>
-            <li>
-                <a href="#depositions">
-                    Depoimentos
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    Contato
-                </a>
-            </li>
-        </ul>
+        <div class="container container__navbar">
+            <h1 class="logo-studion">
+                Studi<span class="copy--primary">ON</span><span class="logo-studion__subtitle"> Eventos</span>
+            </h1>
+            <ul class="navbar__links">
+                <li>
+                    <a href="#company">
+                        Empresa
+                    </a>
+                </li>
+                <li>
+                    <a href="#events">
+                        Eventos
+                    </a>
+                </li>
+                <li>
+                    <a href="#galery">
+                        Galeria
+                    </a>
+                </li>
+                <li>
+                    <a href="#depositions">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contato
+                    </a>
+                </li>
+            </ul>
 
+        </div>
     </nav>
 
     <header>
@@ -60,35 +62,51 @@
     </header>
 
     <main>
-        <section id="testimony">
-            <ul>
+        <section id="counter">
+            <ul class="container counter__container">
                 <li>
-                    <h3>+ de 500 </h3>eventos realizados
+                    <h3>
+                        + de 500 
+                        <small>
+                            eventos realizados
+                        </small>
+                    </h3>
                 </li>
                 <li>
-                    <h3>+ de 1.000.000 </h3>de ingressos vendidos
+                    <h3>
+                        + de 1.000.000 
+                        <small>
+                            de ingressos vendidos
+                        </small>
+                    </h3>
                 </li>
                 <li>
-                    <h3>+ de 300 </h3>empresas atendidas
+                    <h3>
+                        + de 300 
+                        <small>
+                            empresas atendidas
+                        </small>
+                    </h3>
                 </li>
             </ul>
         </section>
-        <section>
-            <div>
-                <img src="./img/Institutional.jpg" />
+        <section class="container institutional">
+            <img class="institutional__image" src="./img/Institutional.jpg" alt="Studion institutional"
+             />
+            <div class="institutional__copy">
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat, consequuntur veritatis ea
                     aliquid voluptate accusantium nihil excepturi soluta placeat, ipsam delectus. Dolor, tempore soluta
-                    ratione eos fuga nostrum nihil.
+                    ratione eos fuga nostrumnihil.
                 </p>
 
-                <button>Saiba Mais</button>
+                <button class="btn btn--institutional">Saiba Mais</button>
             </div>
         </section>
 
         <section>
-            <div>
+            <div class="container">
                 <h6>
                     Você informa a temática e nós planejamos um evento com tecnologia e
                 </h6>
