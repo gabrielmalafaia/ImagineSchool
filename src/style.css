@@ -231,3 +231,12 @@ ul {
     background: unset;
     box-shadow: 0 .5rem .5rem #0006;
 }
+
+.quote {
+    background-image: url(./img/Layer\ 3.jpg);
+    min-height: 80vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
