@@ -121,22 +121,48 @@
         </section>
     </main>
 
-    <footer>
-        <h1>Studi<span>ON</span><span> Eventos</span></h1>
-        <form>
-            <label for="">receba news e promoções</label>
-            <input type="email" placeholder="email" />
-            <button type="submit">Enviar</button>
-        </form>
-        <ul>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-            <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="container footer__container">
+            <h2 class="logo-studion">
+                Studi<span class="copy--primary">ON</span>
+                <span class="logo-studion__subtitle"> Eventos</span>
+            </h2>
+            <form class="footer__form">
+                <label for="email">receba news e promoções</label>
+                <fieldset>
+                    <input id="email" type="email" placeholder="email" />
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane fa-2x"></i>
+                    </button>
+                </fieldset>
+            </form>
+            <ul class="footer__social">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <span class="fa-stack">
+                            <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                            <i class="fa-brands fa-twitter fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-solid fa-circle-play fa-2x"></i>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
         <hr />
         <p>
-            <small>Studi<span>ON</span> - Todos os direitos reservados.</small>
-        </p>        
+            <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados.</small>
+        </p>  
+          
     </footer>
 
 
