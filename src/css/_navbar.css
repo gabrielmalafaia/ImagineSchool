@@ -1,0 +1,47 @@
+.navbar {
+    position: absolute;
+    /*position: fixed;*/
+    z-index: 1; /*use só quando outros elementos sobressaem sobre a navbar*/        
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.container__navbar {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    width: 100vw;
+    height: 6.25rem;
+    padding: 0 1rem;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s all ease;
+}
+
+.navbar__links li {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .875rem;
+    margin-right: 3rem; /*equivale a 16px por padrão, mas ele pega o valor equivalente ao que está no root*/
+    /*Converter px em rem  px/rem(padrão)*/
+}
+
+.navbar a.active{
+    color: var(--color-primary);
+}
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
