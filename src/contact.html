@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudiON</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html">
+                    <a class="active" href="contact.html">
                         Contato
                     </a>
                 </li>
@@ -49,80 +49,68 @@
     </nav>
 
     <header>
-        <div id="slider">
-            <div class="slide">
-                <img 
-                class="slide__background-image" src="./img/Carrossel.jpg" alt="Studion Banner"
-                />
-                <div class="slide__copy">
-                    <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19H</h6>
-                    <h2><span class="copy--primary">Creative</span> Minds</h2>
-                    <button class="btn btn--slide">Saiba Mais</button>
+        <div class="hero">
+            <img src="./img/contact.jpg" alt="" class="hero__background" />
+            <div class="container hero__container">
+                <div class="hero__copy">
+                    <h2>.contato</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi id corporis ipsa ab quaerat reprehenderit deserunt, laudantium fuga ducimus aut nihil excepturi quam vel odit consequuntur, eveniet dolores dignissimos?
+
+                    </p>
                 </div>
             </div>
+
         </div>
     </header>
 
     <main>
-        <section id="counter">
-            <ul class="container counter__container">
-                <li>
-                    <h3>
-                        + de 500 
-                        <small>
-                            eventos realizados
-                        </small>
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        + de 1.000.000 
-                        <small>
-                            de ingressos vendidos
-                        </small>
-                    </h3>
-                </li>
-                <li>
-                    <h3>
-                        + de 300 
-                        <small>
-                            empresas atendidas
-                        </small>
-                    </h3>
-                </li>
-            </ul>
-        </section>
-        <section class="container institutional">
-            <img class="institutional__image" src="./img/Institutional.jpg" alt="Studion institutional"
-             />
-            <div class="institutional__copy">
-                <h6>Fazemos seu evento acontecer</h6>
-                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat, consequuntur veritatis ea
-                    aliquid voluptate accusantium nihil excepturi soluta placeat, ipsam delectus. Dolor, tempore soluta
-                    ratione eos fuga nostrumnihil.
-                </p>
+        <section class="contact">
 
-                <button class="btn btn--institutional">Saiba Mais</button>
-            </div>
-        </section>
+            <section class="contact__info">
+                <div class="contact__info__container">
+                    <h3>Liga pra gente</h3>
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                        +55 48 3223 - 5769
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +55 11 91234-5678
+                    </span>
 
-        <section class="quote">
-            <div class="container quote__container">
-                <div class="quote__copy">
-                    <h6>
-                        Você informa a temática e nós planejamos um evento com tecnologia e
-                    </h6>
-                    <h2>
-                        <span class="copy--primary">Muito+ </span>
-                        <span>Diversão</span>
-                    </h2>    
-                    <button class="btn btn--quote">Fazer Cotação</button>
+                    <h3>Venha Conhecer a nossa Casa</h3>
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+                    </span>
                 </div>
-            </div>
+            </section>
+
+            <section class="contact__form">
+                <form class="contact__form__container" action="">
+                    <h3>Deixe sua mensagem</h3>
+                    <label for="name">Seu nome</label>
+                    <input id="name" type="text" />
+                    <label for="email">Seu email</label>
+                    <input id="email" type="email" />
+                    <label for="message">Sua mensagem</label>
+                    <input id="message" type="text" />
+                    <button class="btn btn__contact" type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+        <section class="maps">
+            <iframe 
+                width="100%" 
+                src="https://maps.google.com/maps?q=Rua%20Miguel%20Daux,%20129%20-%20Coqueiros%20Florian%C3%B3polis&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0">
+            </iframe>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container footer__container">
             <h2 class="logo-studion">
